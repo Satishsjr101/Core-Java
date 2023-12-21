@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "UpperLowerCase",
+      "request": "launch",
+      "mainClass": "UpperLowerCase",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "TablesOfNo",
+      "request": "launch",
+      "mainClass": "TablesOfNo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "LeapYearN",
+      "request": "launch",
+      "mainClass": "LeapYearN",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "CashWithdrwer",
+      "request": "launch",
+      "mainClass": "CashWithdrwer",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "FiveDgtNo",
+      "request": "launch",
+      "mainClass": "FiveDgtNo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Add4DgtNo",
+      "request": "launch",
+      "mainClass": "Add4DgtNo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Swap",
+      "request": "launch",
+      "mainClass": "Swap",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "grossSalary",
+      "request": "launch",
+      "mainClass": "grossSalary",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "abc",
+      "request": "launch",
+      "mainClass": "abc",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "DummyChatGPT",
+      "request": "launch",
+      "mainClass": "DummyChatGPT",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "functions",
+      "request": "launch",
+      "mainClass": "functions",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "FlowOfControlDemo",
+      "request": "launch",
+      "mainClass": "FlowOfControlDemo",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "buterfly_pattern",
+      "request": "launch",
+      "mainClass": "buterfly_pattern",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Calc_salary",
+      "request": "launch",
+      "mainClass": "Calc_salary",
+      "projectName": ""
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/JAVA",
+      "program": "d:/JAVA/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

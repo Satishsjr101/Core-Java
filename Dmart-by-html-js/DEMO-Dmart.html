@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Example</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" onclick="fetchFormData()">Submit</button>
+    </form>
+
+    <script>
+        function fetchFormData() {
+            var nameInput = document.getElementById("name");
+            var emailInput = document.getElementById("email");
+
+            var nameValue = nameInput.value;
+            var emailValue = emailInput.value;
+
+            console.log("Name: " + nameValue);
+            console.log("Email: " + emailValue);
+
+        }
+    </script>
+
+</body>
+</html>

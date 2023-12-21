@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dmart</title>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        body {
+            width: 50%;
+            height: 750px;
+            border: 3px dashed black;
+            text-align: center;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+
+        span {
+            float: right;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>D-mart</h1>
+    </center>
+</body>
+<pre>
+<script>
+    function currentDate() {
+        let dateObj = new Date();
+        let month = dateObj.getUTCMonth() + 1;
+        let day = dateObj.getUTCDate();
+        let year = dateObj.getUTCFullYear();
+
+        let hours = dateObj.getHours();
+        let minutes = dateObj.getMinutes();
+        let seconds = dateObj.getSeconds();
+        let time = hours + ":" + minutes + ":" + seconds;
+        let newdate = year + "/" + month + "/" + day + "&nbsp&nbsp&nbsp" + time;
+        return newdate;
+    }
+    var Item1 = 10;
+    var Item2 = 20;
+    var Item3 = 30;
+    var Item4 = 40;
+    var Item5 = 50;
+    var Item6 = 60;
+    var Item7 = 70;
+    var Item8 = 80;
+    var Item9 = 90;
+    var Item10 = 100;
+    let name = prompt("Enter Your Name: ");
+    let gender = prompt("Enter Your Gender(m/f): ");
+    var gift = (gender == 'f' || gender == 'F') ? "Cadeberry" : (gender == 'm' || gender == 'M') ? "Lethor Wallet" : "No";
+    var q1 = prompt("Enter Quantity of Product1") * 1;
+    var q2 = prompt("Enter Quantity of Product2") * 1;
+    var q3 = prompt("Enter Quantity of Product3") * 1;
+    var q4 = prompt("Enter Quantity of Product4") * 1;
+    var q5 = prompt("Enter Quantity of Product5") * 1;
+    var q6 = prompt("Enter Quantity of Product6") * 1;
+    var q7 = prompt("Enter Quantity of Product7") * 1;
+    var q8 = prompt("Enter Quantity of Product8") * 1;
+    var q9 = prompt("Enter Quantity of Product9") * 1;
+    var q10 = prompt("Enter Quantity of Product10") * 1;
+    var carryBag = prompt("Would You Take Carry Bag(yes/no)")
+    var t1 = q1 * Item1;
+    var t2 = q2 * Item2;
+    var t3 = q3 * Item3;
+    var t4 = q4 * Item4;
+    var t5 = q5 * Item5;
+    var t6 = q6 * Item6;
+    var t7 = q7 * Item7;
+    var t8 = q8 * Item8;
+    var t9 = q9 * Item9;
+    var t10 = q10 * Item10;
+
+    var disc1 = q1 * Item1;
+    var disc5 = q5 * Item5;
+    var disc10 = q10 * Item10;
+
+    if (q1 >= 4) {
+        disc1 = q1 * Item1 - Math.floor(q1 * Item1 * (5 / 100));
+    } if else (q5 >= 1){
+        disc5 = q5 * Item5 - Math.floor(q5 * Item5 * (5 / 100));
+
+    } if else (q10 >= 1){
+        disc10 = q10 * Item10 - Math.floor(q10 * Item10 * (5 / 100));
+    }else {
+        disc1 = q1 * Item1;
+        disc5 = q5 * Item5;
+        disc10 = q10 * Item10;
+    }
+    var bagCharge = 0;
+    if (carryBag) {
+        bagCharge = 10;
+    }
+    var total = t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10;
+    var totalFinal = disc1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10;
+    var gst = Math.floor(total * (10 / 100));
+    var gstFinal = Math.floor(totalFinal * (10 / 100));
+    var totalBill = total + gst + bagCharge;
+    var totalBillFinal = totalFinal + gstFinal + bagCharge;
+    document.write('Name: ' + name + "\t\t");
+    document.write("Date: " + currentDate());
+    document.write("<hr>")
+    document.write("Iteam Name \t Quantity \t Price \t\t Total \t\t After-Discount");
+    document.write("<br>Item-1 \t\t\t" + q1 + "\t\t" + Item1 + "\t\t" + t1 + "\t\t" + disc1 + " \t\t&nbsp;");
+    document.write("<br>Item-2 \t\t\t" + q2 + "\t\t" + Item2 + "\t\t" + t2 + "\t\t" + t2 + " \t\t&nbsp;");
+    document.write("<br>Item-3 \t\t\t" + q3 + "\t\t" + Item3 + "\t\t" + t3 + "\t\t" + t3 + " \t\t&nbsp;");
+    document.write("<br>Item-4 \t\t\t" + q4 + "\t\t" + Item4 + "\t\t" + t4 + "\t\t" + t4 + " \t\t&nbsp;");
+    document.write("<br>Item-5 \t\t\t" + q5 + "\t\t" + Item5 + "\t\t" + t5 + "\t\t" + t5 + " \t\t&nbsp;");
+    document.write("<br>Item-6 \t\t\t" + q6 + "\t\t" + Item6 + "\t\t" + t6 + "\t\t" + t6 + " \t\t&nbsp;");
+    document.write("<br>Item-7 \t\t\t" + q7 + "\t\t" + Item7 + "\t\t" + t7 + "\t\t" + t7 + " \t\t&nbsp;");
+    document.write("<br>Item-8 \t\t\t" + q8 + "\t\t" + Item8 + "\t\t" + t8 + "\t\t" + t8 + " \t\t&nbsp;");
+    document.write("<br>Item-9 \t\t\t" + q9 + "\t\t" + Item9 + "\t\t" + t9 + "\t\t" + t9 + " \t\t&nbsp;");
+    document.write("<br>Item-10 \t\t " + q10 + "\t\t" + Item10 + "\t&nbsp&nbsp" + t10 + "\t\t" + t10 + " \t\t ");
+    document.write("<hr>");
+    document.write("<span>A.P \t D.P.</span>");
+    document.write("<br><span>" + total + "\t" + totalFinal + "</span>")
+    document.write("<br> Gift :- " + gift + "<span>0.00 \t 0.00</span>")
+    document.write("<br>");
+    document.write("<br>Carry Bag:-" + carryBag + "<span>10.00 \t 10.00</span>")
+    document.write("<br>GST(10%) " + "<span>" + gst + "\t\t" + gstFinal + "</span>")
+    document.write("<hr><br><span>" + totalBill + "\t" + totalBillFinal + "Rs.</span>");
+    document.write("<br>Thank You <br> To Visit<br> D-mart");
+    document.write("<br><br><hr>")
+</script>
+</pre>
+
+</html>
